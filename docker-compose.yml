@@ -7,13 +7,12 @@ services:
       dockerfile: Dockerfile
       target: python_service
     ports:
-      - "5001:5000"
+      - "5001:5000"  # Expose Python service on port 5001
     networks:
       - app_network
     volumes:
       - ./python_service:/app
     command: python app.py
-
 networks:
   app_network:
     driver: bridge

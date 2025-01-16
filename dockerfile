@@ -1,4 +1,6 @@
-# Multi-stage Docker build for Python and Rust services
+# Multi-stage Docker build for Python and React
+
+# React stage
 
 # Python stage
 FROM python:3.10-slim AS python_service
